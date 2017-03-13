@@ -2,7 +2,7 @@
 
 This application is an ASP.NET MVC 5 application created with Visual Studio 2013. It uses a SQL Server 2012 database to store data. 
 
-It can be deployed on premise or on any cloud provider. To see a live demo please visit https://mihaisurvey.azurewebsites.net/ 
+It can be deployed on premise or on any cloud provider. To see a demo of this application please visit https://mihaisurvey.azurewebsites.net/ 
 
 For this demo I have deployed the application on Azure App Services and created an Azure SQL Database.
 
