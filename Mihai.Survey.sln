@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mihai.Survey", "Mihai.Survey\Mihai.Survey.csproj", "{FC93C46B-F6AF-41CB-B01A-667BFD66AB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mihai.Survey.Data", "Mihai.Survey.Data\Mihai.Survey.Data.csproj", "{E94CBC43-75ED-486B-BB00-0FC92B49DAB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC93C46B-F6AF-41CB-B01A-667BFD66AB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC93C46B-F6AF-41CB-B01A-667BFD66AB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC93C46B-F6AF-41CB-B01A-667BFD66AB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC93C46B-F6AF-41CB-B01A-667BFD66AB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E94CBC43-75ED-486B-BB00-0FC92B49DAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E94CBC43-75ED-486B-BB00-0FC92B49DAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E94CBC43-75ED-486B-BB00-0FC92B49DAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E94CBC43-75ED-486B-BB00-0FC92B49DAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

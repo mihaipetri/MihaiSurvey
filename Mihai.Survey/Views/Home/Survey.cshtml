@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Mihai.Survey.Data.Question>
+@{
+    ViewBag.Title = "Customer Satisfaction Survey";
+}
+
+<div class="row" style="color:white; background-color:#428bca; text-align:center">
+    <h2>@ViewBag.Title</h2>
+</div>
+
+<br />
+<br />
+
+@using (Html.BeginForm("CreateSurvey", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    foreach (var q in Model)
+    {
+        <h3 style="color: deepskyblue">@q.DisplayOrder.<text> </text>@q.Name</h3>
+        if (q.Type == 0)
+        {
+            <div class="row">
+                <div class="col-md-4">Not at all likely</div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">Extremely likely</div>
+            </div>
+            @:<div class="btn-group" data-toggle="buttons">
+        }
+        foreach (var ans in q.Answers)
+        {
+            switch (q.Type)
+            {
+                case 0:
+                    <label class="btn btn-default" style="width:80px"><input type="radio" id="@q.Id" name="@q.Id" value="@ans.Id">@ans.Name</label>
+                    break;
+                case 1:
+                    <div class="radio">
+                        <label><input type="radio" id="@q.Id" name="@q.Id" value="@ans.Id">@ans.Name</label>
+                    </div>
+                    break;
+                case 2:
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="@q.Id" name="@q.Id" value="@ans.Id">@ans.Name</label>
+                    </div>
+                    break;
+                case 3:
+                    <div style="width: 800px">
+                        <textarea style="min-width: 100%" rows="6" cols="100" id="@q.Id" name="@q.Id"></textarea>
+                    </div>
+                    break;
+            }
+        }
+        
+        if (q.Type == 0)
+        {
+            @:</div>
+        }
+    }
+
+    <br />
+    <br />
+
+    <div style="text-align:center">
+        <input type="submit" class="btn btn-primary btn-lg" style="width:150px" value="Done" />
+    </div>
+}
+
+<br />
+<br />
