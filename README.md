@@ -16,7 +16,9 @@ For this demo I have deployed the application on Azure App Services and created 
 
 ## Deploy the Application
 
-- To deploy the application please publish the application from Visual Studio to create the deployment package, then create an IIS web site in any server and restore the deployment package.
+- To deploy the application please publish the application from Visual Studio to create the deployment package or use MihaiSurvey_DeploymentPackage.zip file from DeploymentPackage folder.
+
+- Create an IIS web site in any server and restore the deployment package.
 
 - To create the application database please connect to any SQL Server 2012 or later and run MihaiSurveyDB_SchemaAndData.sql script.
 
